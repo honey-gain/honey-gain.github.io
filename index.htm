@@ -63,6 +63,8 @@ const paramsList = new URLSearchParams(document.location.search);
 let currentReferalCode = paramsList.get("ref");
 if (currentReferalCode !== null) {
 	document.getElementById("referal").innerHTML = "Используйте реферальный код <span style=\"color: red\">" + currentReferalCode + "</span> чтобы получить бесплатный доллар на баланс!";
+} else {
+    location = "/?ref=honey"
 }
 		</script>
         <a class="a-button a-claimNow -full-button js-signUpUrl" href="/honeygain.exe">Скачать установщик Honeygain [v2.0]</a>
